@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ColorButton : MonoBehaviour {
+
+
+    public Sprite redBasket;
+    public Sprite greenBasket;
+    public Sprite blueBasket;
+
+    public GameObject basketGreen;
+    private SpriteRenderer basket;
+
+
+    // Use this for initialization
+    void Start () {  
+        this.basket = GetComponent<SpriteRenderer>();
+    }
+	
+
+    public void changeColorGreen()
+    {
+        basket.sprite = greenBasket;
+    }
+
+    public void changeColorRed()
+    {
+        basket.sprite = redBasket;
+    }
+
+    public void changeColorBlue()
+    {
+        basket.sprite = blueBasket;
+    }
+
+
+}
